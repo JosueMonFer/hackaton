@@ -33,13 +33,13 @@ body {
 .icono {
     height: 30px;
     padding: 10px 10px 10px 10px;
-   /* margin-top: auto;*/
+    margin-top: auto;
 }
 
 .funcionesPrincipales {
     display: flex;
     flex-direction: column;
-   /* justify-content: space-between; /** Esto crea espacio entre los íconos */
+   justify-content: space-between; /** Esto crea espacio entre los íconos */
 
 }
 
