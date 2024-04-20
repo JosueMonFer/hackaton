@@ -25,21 +25,22 @@ body {
 
 /* Estilo para el texto "BIENVENIDO MARCO!" */
 .titulo {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #682ABF;
-    font-size: 18px;
+    font-size: 24px;
 }
 
 /* Ajusta la posición de la barra lateral */
 .barraLateral {
-    width: 60px; /* Ancho de la barra lateral */
-    height: calc(100% - 60px); /* Altura ajustada para que no se superponga con la barra superior */
-    background-color: white; /* Color de fondo */
-    position: fixed; /* Barra lateral fija */
-    top: 60px; /* Alineación debajo de la barra superior */
-    padding-top: 20px; /* Espacio superior para evitar que el contenido se superponga */
-    padding-bottom: 20px; /* Espacio inferior */
-    overflow: hidden; /* Evita que el contenido exceda el área de la barra lateral */
-    z-index: 1; /* Asegura que la barra lateral esté detrás de la barra superior */
+    width: 60px;
+    height: calc(100% - 60px);
+    background-color: white;
+    position: fixed;
+    top: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    overflow: hidden;
+    z-index: 1;
     border-right: solid rgba(210, 210, 210, 0.5);
 }
 
@@ -78,9 +79,12 @@ nav ul li a {
 .dashboard {
     font-family: Arial, sans-serif;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    margin: auto;
     align-items: center;
-    height: 100vh;
+    height: 105vh;
+    width: 90vw;
     background-color: #f5f5f5;
 }
 
@@ -90,13 +94,30 @@ nav ul li a {
     border-radius: 8px;
     padding: 20px;
     margin: 10px;
-    width: 200px;
+    width: 20%; /* Ajustamos el ancho para que siempre haya 4 tarjetas por fila */
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.caja a {
+    text-decoration: none;
+    color: inherit; 
+}
+
+.caja:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    background-color: #f5dff6; /* Cambio de color de fondo */
+    transition: 0.3s; /* Transición suave */
+}
+
 h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
     margin-bottom: 10px;
 }
 
+h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #682ABF;
+}
