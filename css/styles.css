@@ -70,4 +70,6 @@ nav ul li a {
 .icono {
     height: 30px;
     padding-bottom: 15px;
+    ng-bottom: 15px;
+
 }
