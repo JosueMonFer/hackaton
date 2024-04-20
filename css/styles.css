@@ -1,5 +1,6 @@
 body {
     background-color: #F6F6F6;
+    margin: 0;
 }
 
 /* Estilo para la barra superior */
@@ -39,7 +40,7 @@ body {
     padding-bottom: 20px; /* Espacio inferior */
     overflow: hidden; /* Evita que el contenido exceda el área de la barra lateral */
     z-index: 1; /* Asegura que la barra lateral esté detrás de la barra superior */
-    border-right: solid rgba(210, 210, 210, 0.5)
+    border-right: solid rgba(210, 210, 210, 0.5);
 }
 
 
@@ -65,13 +66,37 @@ nav ul li a {
 .perfil {
     position: absolute; /* Posicionamiento absoluto */
     bottom: 20px; /* Alineación en la esquina inferior */
-    left: 10px; /* Alineación a la izquierda */
+    left: 25%; /* Alineación a la izquierda */
     color: white;
 }
 
 .icono {
     height: 30px;
     padding-bottom: 15px;
-    ng-bottom: 15px;
-
 }
+
+.dashboard {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.caja {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
