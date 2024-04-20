@@ -1,15 +1,44 @@
-/* Estilo para la barra lateral */
+/* Estilo para la barra superior */
+.barraSuperior {
+    height: 60px; /* Altura deseada */
+    background-color: #333; /* Color de fondo */
+    display: flex;
+    align-items: center; /* Centra verticalmente la imagen */
+    padding: 0 20px; /* Espacio interno */
+    position: fixed; /* Barra superior fija */
+    top: 0; /* Alineación en la parte superior */
+    left: 0;
+    right: 0;
+    z-index: 2; /* Asegura que la barra superior esté por encima de la barra lateral */
+}
+
+.barraSuperior img {
+    height: 30px; /* Tamaño del logo pequeño */
+    margin-right: 10px; /* Espacio entre el logo y el texto */
+}
+
+/* Estilo para el texto "BIENVENIDO MARCO!" */
+.titulo {
+    color: white;
+    font-size: 18px;
+}
+
+/* Ajusta la posición de la barra lateral */
 .barraLateral {
     width: 200px; /* Ancho de la barra lateral */
-    height: 100%; /* Altura completa */
+    height: calc(100% - 60px); /* Altura ajustada para que no se superponga con la barra superior */
     background-color: #333; /* Color de fondo */
     position: fixed; /* Barra lateral fija */
-    top: 0;
+    top: 60px; /* Alineación debajo de la barra superior */
     left: 0;
     padding-top: 20px; /* Espacio superior para evitar que el contenido se superponga */
     padding-bottom: 20px; /* Espacio inferior */
     overflow: hidden; /* Evita que el contenido exceda el área de la barra lateral */
+    z-index: 1; /* Asegura que la barra lateral esté detrás de la barra superior */
 }
+
+
+
 
 /* Estilo para el menú de navegación */
 nav ul {
