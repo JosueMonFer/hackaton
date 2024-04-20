@@ -1,0 +1,53 @@
+*html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #F6F6F6;
+}
+
+.barraSuperior {
+    padding: 10px;
+    border-bottom: solid;
+    background-color: white;
+}
+
+#imagenLogo {
+    height: 40px;
+    vertical-align: middle;
+}
+
+.titulo {
+    color: #682ABF;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    vertical-align: middle;
+}
+
+.barraLateral {
+    display: inline-block;
+    border-right: solid;
+    background-color: white;
+}
+
+.icono {
+    height: 30px;
+    padding: 10px 10px 10px 10px;
+}
+
+.funcionesPrincipales {
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul {
+    padding: 0px;
+}
+
+nav li{
+    list-style: none;
+}
+
+nav ul li:last-child {
+    
+}
